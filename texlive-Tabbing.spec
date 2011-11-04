@@ -1,3 +1,9 @@
+# revision 17022
+# category Package
+# catalog-ctan /macros/latex/contrib/Tabbing
+# catalog-date 2010-02-14 11:55:47 +0100
+# catalog-license lppl
+# catalog-version undef
 Name:		texlive-Tabbing
 Version:	20100214
 Release:	1
@@ -47,6 +53,7 @@ commands.
 #- source
 %doc %{_texmfdistdir}/source/latex/Tabbing/Tabbing.dtx
 %doc %{_texmfdistdir}/source/latex/Tabbing/Tabbing.ins
+%doc %{_tlpkgobjdir}/*.tlpobj
 
 #-----------------------------------------------------------------------
 %prep
@@ -57,3 +64,5 @@ commands.
 %install
 mkdir -p %{buildroot}%{_texmfdistdir}
 cp -fpar tex doc source %{buildroot}%{_texmfdistdir}
+mkdir -p %{buildroot}%{_tlpkgobjdir}
+cp -fpa tlpkg/tlpobj/*.tlpobj %{buildroot}%{_tlpkgobjdir}
