@@ -6,7 +6,7 @@
 # catalog-version undef
 Name:		texlive-Tabbing
 Version:	20100214
-Release:	5
+Release:	6
 Summary:	Tabbing with accented letters
 Group:		Publishing
 URL:		http://www.ctan.org/tex-archive/macros/latex/contrib/Tabbing
