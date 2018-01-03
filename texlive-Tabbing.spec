@@ -1,9 +1,3 @@
-# revision 17022
-# category Package
-# catalog-ctan /macros/latex/contrib/Tabbing
-# catalog-date 2010-02-14 11:55:47 +0100
-# catalog-license lppl
-# catalog-version undef
 Name:		texlive-Tabbing
 Version:	20170414
 Release:	1
@@ -37,12 +31,10 @@ commands.
 
 #-----------------------------------------------------------------------
 %files
-%{_texmfdistdir}/tex/latex/Tabbing/Tabbing.sty
-%doc %{_texmfdistdir}/doc/latex/Tabbing/00readme
-%doc %{_texmfdistdir}/doc/latex/Tabbing/Tabbing.pdf
+%{_texmfdistdir}/tex/latex/Tabbing
+%doc %{_texmfdistdir}/doc/latex/Tabbing
 #- source
-%doc %{_texmfdistdir}/source/latex/Tabbing/Tabbing.dtx
-%doc %{_texmfdistdir}/source/latex/Tabbing/Tabbing.ins
+%doc %{_texmfdistdir}/source/latex/Tabbing
 
 #-----------------------------------------------------------------------
 %prep
@@ -53,18 +45,3 @@ commands.
 %install
 mkdir -p %{buildroot}%{_texmfdistdir}
 cp -fpar tex doc source %{buildroot}%{_texmfdistdir}
-
-
-%changelog
-* Wed Jan 04 2012 Paulo Andrade <pcpa@mandriva.com.br> 20100214-2
-+ Revision: 756426
-- Rebuild to reduce used resources
-
-* Sat Nov 05 2011 Paulo Andrade <pcpa@mandriva.com.br> 20100214-1
-+ Revision: 719632
-- texlive-Tabbing
-- texlive-Tabbing
-- texlive-Tabbing
-- texlive-Tabbing
-- texlive-Tabbing
-
