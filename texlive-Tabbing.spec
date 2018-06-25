@@ -1,5 +1,5 @@
 Name:		texlive-Tabbing
-Version:	20170414
+Version:	20180303
 Release:	1
 Summary:	Tabbing with accented letters
 Group:		Publishing
