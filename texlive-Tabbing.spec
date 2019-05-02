@@ -1,6 +1,6 @@
 Name:		texlive-Tabbing
-Version:	20180303
-Release:	2
+Version:	20190228
+Release:	1
 Summary:	Tabbing with accented letters
 Group:		Publishing
 URL:		http://www.ctan.org/tex-archive/macros/latex/contrib/Tabbing
