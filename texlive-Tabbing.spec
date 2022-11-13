@@ -1,13 +1,13 @@
 Name:		texlive-Tabbing
-Version:	20190228
+Version:	59715
 Release:	1
 Summary:	Tabbing with accented letters
 Group:		Publishing
 URL:		http://www.ctan.org/tex-archive/macros/latex/contrib/Tabbing
 License:	LPPL
-Source0:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/Tabbing.tar.xz
-Source1:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/Tabbing.doc.tar.xz
-Source2:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/Tabbing.source.tar.xz
+Source0:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/tabbing.r%{version}.tar.xz
+Source1:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/tabbing.doc.r%{version}.tar.xz
+Source2:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/tabbing.source.r%{version}.tar.xz
 BuildArch:	noarch
 BuildRequires:	texlive-tlpkg
 Requires(pre):	texlive-tlpkg
@@ -22,23 +22,24 @@ difficulty, so that users need not learn two sets of accent
 commands.
 
 %post
-    %{_sbindir}/texlive.post
+%{_sbindir}/texlive.post
 
 %postun
-    if [ $1 -eq 0 ]; then
+if [ $1 -eq 0 ]; then
 	%{_sbindir}/texlive.post
-    fi
+fi
 
 #-----------------------------------------------------------------------
 %files
-%{_texmfdistdir}/tex/latex/Tabbing
-%doc %{_texmfdistdir}/doc/latex/Tabbing
+%{_texmfdistdir}/tex/latex/tabbing
+%doc %{_texmfdistdir}/doc/latex/tabbing
 #- source
-%doc %{_texmfdistdir}/source/latex/Tabbing
+%doc %{_texmfdistdir}/source/latex/tabbing
 
 #-----------------------------------------------------------------------
 %prep
-%setup -c -a0 -a1 -a2
+%setup -c -a1 -a2
+%autopatch -p1
 
 %build
 
