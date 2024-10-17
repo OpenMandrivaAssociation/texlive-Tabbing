@@ -3,7 +3,7 @@ Version:	59715
 Release:	2
 Summary:	Tabbing with accented letters
 Group:		Publishing
-URL:		http://www.ctan.org/tex-archive/macros/latex/contrib/Tabbing
+URL:		https://www.ctan.org/tex-archive/macros/latex/contrib/Tabbing
 License:	LPPL
 Source0:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/tabbing.r%{version}.tar.xz
 Source1:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/tabbing.doc.r%{version}.tar.xz
